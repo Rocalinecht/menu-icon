@@ -1,0 +1,67 @@
+body{
+    margin :0;
+}
+.page{
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.nav{
+    position: absolute;
+    left: 0; top: 0;
+    width: 165px;
+    height: 100%;
+    background-color: #026957;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    color: white;
+    transition: all .3s ease;
+}
+
+.logo{
+    font-size: 50px;
+    position: absolute;
+    top:75px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.item{
+    margin: 20px 0 20px 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+.item ion-icon {
+    font-size: 25px;
+}
+
+.item span {
+    font-weight: 300;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.nav.collapsed{
+    width: 60px;
+}
+
+.nav.collapsed .item{
+   margin :20px auto;
+}
+
+.nav.collapsed .item span{
+    display: none;
+}
+
+.nav.collapsed .logo {
+    transform: translateX(-50%) scale(.7);
+ }
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu icon</title>
+</head>
+<body>
+    <div class="page">
+        <div id="nav" class="nav">
+            <div class="logo" onclick="collapseNav()">
+                <ion-icon  name="ice-cream-outline"></ion-icon>
+            </div>
+
+            <div class="item"><ion-icon name="home-outline"></ion-icon><span>Home</span></div>
+            <div class="item"><ion-icon name="person-circle-outline"></ion-icon><span>Aboute me</span></div>
+            <div class="item"><ion-icon name="terminal-outline"></ion-icon><span>Projet</span></div>
+            <div class="item"><ion-icon name="call-outline"></ion-icon><span>Contact</span></div>
+
+        </div>
+
+
+    </div>
+    
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script>
+        const collapseNav = () => {
+            document.getElementById("nav").classList.toggle("collapsed");
+        }
+    </script>
+</body>
+</html>
